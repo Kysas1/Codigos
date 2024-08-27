@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 01 </title>
+</head>
+<body>
+    <h1>Desafio 01 - Javascript</h1>
+    <p>Escreva aonde vc nasceu : <input type="text" id="txt1"> <input type="button" value="Verificar" onclick="verificar()"></p>
+    <div id="div1"></div>
+    <script>
+        function verificar(){
+            var pais = document.getElementById('txt1')
+            var txt = document.getElementById('div1')
+                if (pais.value == 'Brasil', 'brasil','br') {
+                    txt.innerHTML = `Nascendo em ${pais.value} Voce é Brasileiro !`
+                } else {
+                    txt.innerHTML = `Nascendo em ${pais.value} Voce é Estrangeiro`
+                }
+        }
+    </script>
+</body>
+</html>
